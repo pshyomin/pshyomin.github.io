@@ -3,8 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "399679c445143616b33a318b52c1cef6",
+  "assets/AssetManifest.json": "00fd71a87c2208d592248f0aaf003f54",
 "assets/assets/Apple.svg": "00587615733dd4954be85d8bf79f1d6f",
+"assets/assets/flutter.svg": "59a662c262bb9fae1751abe4d13abb84",
 "assets/assets/font/NotoSansKR-Black.otf": "05c077164c27fa722dcafe63ed38355e",
 "assets/assets/font/NotoSansKR-Bold.otf": "e2406ff1791c401bc93e73d9e44e6d2b",
 "assets/assets/font/NotoSansKR-Light.otf": "e914a10a1bd0088fb8f743fc7569749f",
@@ -36,9 +37,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "55c2e74c056b8a289b5a3ccdce64511a",
-"/": "55c2e74c056b8a289b5a3ccdce64511a",
-"main.dart.js": "d50fcc0aef56a19aa9d21fcd769be337",
+"index.html": "fe7636073e9647c720ad8573a4f5802f",
+"/": "fe7636073e9647c720ad8573a4f5802f",
+"main.dart.js": "9fd9745c48a619d4feec5d2b202f133e",
 "manifest.json": "dd0c40546d12d2b014865865194e10af",
 "scripts/botd-1.1.0.js": "99a8155b029f958b7dfa1012af3b280f",
 "version.json": "009c9e65172e010890f7f65fde438006"
