@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "9ec5f6595f8a7ba5dc8d8b0890da1f1e",
+  "assets/AssetManifest.json": "00e50dca74d1b018cca3e8649f84f42c",
 "assets/assets/Apple.svg": "00587615733dd4954be85d8bf79f1d6f",
 "assets/assets/flutter.svg": "59a662c262bb9fae1751abe4d13abb84",
 "assets/assets/font/NotoSansKR-Black.otf": "05c077164c27fa722dcafe63ed38355e",
@@ -14,6 +14,10 @@ const RESOURCES = {
 "assets/assets/font/NotoSansKR-Thin.otf": "277434d967d5f33b857fc3f2dbaff15b",
 "assets/assets/github.svg": "07883e93734b98cae0f7b9c55d287250",
 "assets/assets/Google_Play.svg": "e61eb638595960e94e96f68430f92762",
+"assets/assets/icon/csharp.svg": "fd6586faa64e4dfd0635ed4a1e5439c1",
+"assets/assets/icon/dotnet.svg": "dce69d5779414f75388d4c16ea96d626",
+"assets/assets/icon/flutter.svg": "ea67ff4e8060634c0008c912a810338e",
+"assets/assets/icon/unity.svg": "07071db9a6d78d84321aa3d21e6ef393",
 "assets/assets/profile.jpg": "f3ebe2e1b230a81c01af4ff8ab4da0cf",
 "assets/FontManifest.json": "f70d435f0d54568b9878770ebe763778",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
@@ -38,9 +42,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "c3c4d7b2f40fa14a3c59d6d9aecdaf82",
-"/": "c3c4d7b2f40fa14a3c59d6d9aecdaf82",
-"main.dart.js": "487b52e9eb37909fda67a584ba977421",
+"index.html": "edc9ea10f426e211da139072e7521bc4",
+"/": "edc9ea10f426e211da139072e7521bc4",
+"main.dart.js": "955617f89914e8d225f7e89e028422c1",
 "manifest.json": "dd0c40546d12d2b014865865194e10af",
 "scripts/botd-1.1.0.js": "99a8155b029f958b7dfa1012af3b280f",
 "version.json": "009c9e65172e010890f7f65fde438006"
