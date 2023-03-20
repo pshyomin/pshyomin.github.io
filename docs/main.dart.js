@@ -11441,14 +11441,15 @@ _.cx=s
 _.cy=a0
 _.db=a1},
 RJ:function RJ(){},
-rz(a,b,c,d,e){return new A.JR(c,b,a,d,e,null)},
-JR:function JR(a,b,c,d,e,f){var _=this
+rz(a,b,c,d,e,f){return new A.JR(c,e,b,a,d,f,null)},
+JR:function JR(a,b,c,d,e,f,g){var _=this
 _.c=a
-_.w=b
-_.z=c
-_.ax=d
-_.cx=e
-_.a=f},
+_.r=b
+_.w=c
+_.z=d
+_.ax=e
+_.cx=f
+_.a=g},
 aH4(a,b,c){return new A.y5(A.qM(a.a,b.a,c))},
 y5:function y5(a){this.a=a},
 S4:function S4(){},
@@ -46001,7 +46002,7 @@ a5.a.toString
 if(q===!0){b1=f.a
 if(b1==null)b1=24
 A.a7b(b3,B.ig,t.c4).toString
-b=A.rz(a6,B.qc,b1,a5.ga0v(),a7)}else{if(!(!p&&o)){if(b1)b1=a6
+b=A.rz(a6,B.qc,b1,a5.ga0v(),a6,a7)}else{if(!(!p&&o)){if(b1)b1=a6
 else b1=b2.gwp()||b2.eo$>0
 b1=b1===!0}else b1=!0
 if(b1)b=B.Gm
@@ -46020,7 +46021,7 @@ if(b1!=null&&!0){b1.toString
 a2=A.d8(b1,B.ja,B.ag,B.Cq)}else if(p){b1=f.a
 if(b1==null)b1=24
 A.a7b(b3,B.ig,t.c4).toString
-a2=A.rz(a6,B.qc,b1,a5.ga0x(),a7)}else a2=a6
+a2=A.rz(a6,B.qc,b1,a5.ga0x(),a6,a7)}else a2=a6
 if(a2!=null)a2=A.y6(a2,e)
 b1=a5.a.a_y(a8)
 a5.a.toString
@@ -46253,7 +46254,7 @@ A.G3.prototype={
 M(a){return new A.fD(A.aF3(A.b3(a).r),null,null)}}
 A.G2.prototype={
 M(a){A.a7b(a,B.ig,t.c4).toString
-return A.rz(null,B.Gl,null,new A.Zc(this,a),"Back")}}
+return A.rz(null,B.Gl,null,new A.Zc(this,a),null,"Back")}}
 A.Zc.prototype={
 $0(){A.aHU(this.b)},
 $S:0}
@@ -47246,7 +47247,8 @@ if(m==null)m=24
 s=new A.hD(o,new A.cd(B.ay,A.dx(new A.m_(B.y,q,q,A.y6(r.w,new A.dj(m,q,q,q,q,r.z,q,q)),q),m,m),q),q)
 n=r.cx
 if(n!=null)s=A.aJP(s,n)
-n=Math.max(35,(m+Math.min(B.ay.gd_(),B.ay.gbE(B.ay)+B.ay.gbH(B.ay)))*0.7)
+n=r.r
+if(n==null)n=Math.max(35,(m+Math.min(B.ay.gd_(),B.ay.gbE(B.ay)+B.ay.gbH(B.ay)))*0.7)
 return A.dT(!0,A.aH8(!1,q,!0,s,!1,q,!0,!1,p.cx,q,p.cy,B.iQ,p.dx,q,B.id,q,q,q,q,q,r.ax,q,q,q,q,n,p.k3,q,q),!1,!0,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)}}
 A.y5.prototype={
 gq(a){return J.t(this.a)},
@@ -72279,7 +72281,7 @@ return A.lb(s,s,B.b8,s,s,!0,s,A.hm(A.a([A.hm(s,p,q,a)],t.Ne),s,r,"\uc774\uba54\u
 XG(a){var s=A.a3(a).h("a8<1,k>")
 return A.Pp(B.cI,A.aj(new A.a8(a,new A.YD(this),s),!0,s.h("aF.E")),B.ab,0,0)},
 XE(a,b){var s=null
-return A.rz(s,A.ug(a,s,s),32,new A.Yz(this,b),s)},
+return A.rz(s,A.ug(a,s,s),32,new A.Yz(this,b),s,s)},
 tV(a){return this.a3_(a)},
 a3_(a){var s=0,r=A.X(t.z),q
 var $async$tV=A.Y(function(b,c){if(b===1)return A.U(c,r)
@@ -72418,7 +72420,7 @@ s=640}r=$.HB
 p=r?p:360
 s=r?s:640
 return A.aR(q,A.abP(A.aro(A.a([this.Ym("assets/github.png","https://github.com/pshyomin/calculator")],t.D),B.p,q,0,q),B.p,A.avg(new A.a_k(o),t.A,t.N)),B.h,q,q,B.Hf,q,s,q,q,q,q,p)},
-Ym(a,b){return A.rz(null,A.rB(a,B.i,null),64,new A.a_0(this,b),null)},
+Ym(a,b){return A.rz(null,A.rB(a,B.i,null),64,new A.a_0(this,b),32,null)},
 u0(a){return this.a30(a)},
 a30(a){var s=0,r=A.X(t.z),q
 var $async$u0=A.Y(function(b,c){if(b===1)return A.U(c,r)
@@ -72572,7 +72574,7 @@ s=1
 break
 case 1:return A.V(q,r)}})
 return A.W($async$mc,r)},
-a1I(a,b){return A.rz(null,A.rB(a,B.i,null),64,new A.a5q(this,b),null)},
+a1I(a,b){return A.rz(null,A.rB(a,B.i,null),64,new A.a5q(this,b),32,null)},
 uq(a){return this.a33(a)},
 a33(a){var s=0,r=A.X(t.z),q
 var $async$uq=A.Y(function(b,c){if(b===1)return A.U(c,r)
@@ -72821,7 +72823,7 @@ A.Qe.prototype={
 M(a){var s=this,r=null,q=A.c4(42),p=A.Np(a).C_(!1),o=A.Nq(),n=t.D,m=A.aR(r,A.cm(A.a([A.dx(A.cm(A.a([s.yS("About Me",B.E),A.dx(A.d8(A.a([A.a_N(B.E,A.a_N(B.aX,r,A.rB("assets/profile.jpg",r,r).c,48),r,52),new A.cd(B.MH,new A.P8(0.2,35,35,B.E,r),r),A.cm(A.a([s.Av("\uc774\ub984 : \ucd5c\ud6a8\ubbfc"),s.Av("\uc0dd\ub144\uc6d4\uc77c : 93.12.07"),s.Av("\uc8fc\uc18c\uc9c0 : \ubd80\uc0b0\uc2dc \uae30\uc7a5\uad70"),s.Aw("chymin7321@icloud.com",12,!0),s.a2a("assets/github.svg","https://github.com/pshyomin")],n),B.dS,B.a9)],n),B.t,B.a9,B.Z),150,452.2),A.dx(A.cm(A.a([s.a3M(s.f),s.a3N(u.A,15),A.a1c(B.E,10,10,0.5)],n),B.t,B.Cp),170,357)],n),B.t,B.ag),350,452.2),A.aR(r,A.cm(A.a([s.yS("Portfolio",B.E),A.aR(r,A.awo(B.a3F,new A.aiV(s),2,r,B.ak),B.h,r,r,r,r,300,B.cT,r,r,r,452.2),new A.K0(A.d8(A.a([new A.cd(B.MJ,A.fa(B.y,s.yS("Experience",B.E),B.h,B.ax),r),A.J9(A.a1c(B.E,10,10,0.5))],n),B.t,B.ag,B.Z),r),A.dx(A.awo(B.a3E,new A.aiW(s),1,B.jh,B.ab),150,452.2)],n),B.t,B.ag),B.h,r,r,r,r,550,B.MC,r,r,r,452.2),s.a2b("Github Source, HYOMIN CHOI",u.a,8)],n),B.t,B.a9),B.h,B.i,r,r,r,1000,r,r,r,r,476),l=A.a([new A.f5(2,B.bQ,A.aT(B.d.aS(76.5),158,158,158),B.a1r,3)],t.sq),k=s.d[s.r]
 return A.qW(q,A.axK(p,A.aR(r,A.awL(A.a([m,A.aR(r,new A.I8(k.a,k.b,k.d,k.f,k.r,"","",r),B.h,r,r,new A.bA(B.L3,r,r,r,l,r,B.F),r,1000,r,r,r,r,714)],n),o,B.a1p,B.ab),B.h,B.i,r,r,r,995,r,r,r,r,1185)))},
 a2a(a,b){var s=null
-return A.rz(s,A.ug(a,s,s),s,new A.aiN(this,b),s)},
+return A.rz(s,A.ug(a,s,s),s,new A.aiN(this,b),s,s)},
 a29(a,b){return A.awO(A.ug(a,18,21),B.dR,0,0.2,new A.aiM(this,b),B.q1,B.dM)},
 a3M(a){var s=A.a3(a).h("a8<1,k>")
 return A.Pp(B.cI,A.aj(new A.a8(a,new A.aiS(this),s),!0,s.h("aF.E")),B.ab,0,0)},
