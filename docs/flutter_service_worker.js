@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "00e50dca74d1b018cca3e8649f84f42c",
+  "assets/AssetManifest.json": "0bb19425591532874edf37d009f2b7e5",
 "assets/assets/Apple.svg": "00587615733dd4954be85d8bf79f1d6f",
 "assets/assets/flutter.svg": "59a662c262bb9fae1751abe4d13abb84",
 "assets/assets/font/NotoSansKR-Black.otf": "05c077164c27fa722dcafe63ed38355e",
@@ -14,10 +14,13 @@ const RESOURCES = {
 "assets/assets/font/NotoSansKR-Thin.otf": "277434d967d5f33b857fc3f2dbaff15b",
 "assets/assets/github.svg": "07883e93734b98cae0f7b9c55d287250",
 "assets/assets/Google_Play.svg": "e61eb638595960e94e96f68430f92762",
+"assets/assets/icon/calculator.png": "2461f0d9214b0bba611aa3866e8924fa",
 "assets/assets/icon/csharp.svg": "fd6586faa64e4dfd0635ed4a1e5439c1",
 "assets/assets/icon/dotnet.svg": "dce69d5779414f75388d4c16ea96d626",
 "assets/assets/icon/flutter.svg": "ea67ff4e8060634c0008c912a810338e",
 "assets/assets/icon/unity.svg": "07071db9a6d78d84321aa3d21e6ef393",
+"assets/assets/icon/wafull.jpg": "c3ac72d74f7072e63a8bee8e6c5bca2b",
+"assets/assets/icon/weather.png": "b33c61994945982988ff714a833c3c9e",
 "assets/assets/profile.jpg": "f3ebe2e1b230a81c01af4ff8ab4da0cf",
 "assets/FontManifest.json": "f70d435f0d54568b9878770ebe763778",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
@@ -42,12 +45,12 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "4a506bdc3c65d2f37ed11715c6bfeab3",
-"/": "4a506bdc3c65d2f37ed11715c6bfeab3",
-"main.dart.js": "a3d93757170d3a7d4fb55bd13c7fa1ce",
+"index.html": "a25695c8936ce112c8688fdcac89afe2",
+"/": "a25695c8936ce112c8688fdcac89afe2",
+"main.dart.js": "6a5a19b1f6c3b8c1cebb140a78a4e77e",
 "manifest.json": "dd0c40546d12d2b014865865194e10af",
 "scripts/botd-1.1.0.js": "99a8155b029f958b7dfa1012af3b280f",
-"version.json": "009c9e65172e010890f7f65fde438006"
+"version.json": "74f80ac8e98b6ba209e4eb96eb7f918f"
 };
 
 // The application shell files that are downloaded before a service worker can
