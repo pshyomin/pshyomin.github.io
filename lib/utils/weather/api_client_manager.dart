@@ -19,6 +19,7 @@ class APIClientManager {
   });
 
   final headers = {'Accept-Charset': 'charset=utf-8', 'Origin': ''};
+  final String domain = 'www.uridongnae.com';
 
   Future<Live> fetchLive(
       Point<num> latlong, String baseData, String hour, String minute) async {
@@ -30,7 +31,7 @@ class APIClientManager {
     }
 
     var url =
-        'http://${Config.domain}:8080/api/live/$baseData/$iHour/${latlong.x}/${latlong.y}';
+        'http://$domain:8080/api/live/$baseData/$iHour/${latlong.x}/${latlong.y}';
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
       throw Exception('error api');
@@ -55,7 +56,7 @@ class APIClientManager {
     }
 
     var url =
-        'http://${Config.domain}:8080/api/liveday/$baseData/$iHour/$iMinute/${latlong.x}/${latlong.y}';
+        'http://$domain:8080/api/liveday/$baseData/$iHour/$iMinute/${latlong.x}/${latlong.y}';
 
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
@@ -76,8 +77,7 @@ class APIClientManager {
       iData -= 1;
     }
 
-    var url =
-        'http://${Config.domain}:8080/api/daily/$iData/${latlong.x}/${latlong.y}';
+    var url = 'http://$domain:8080/api/daily/$iData/${latlong.x}/${latlong.y}';
 
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
@@ -90,7 +90,7 @@ class APIClientManager {
   }
 
   Future<SunModel> fetchSun(String legalcode, String baseData) async {
-    var url = 'http://${Config.domain}:8080/api/sun/$baseData/$legalcode';
+    var url = 'http://$domain:8080/api/sun/$baseData/$legalcode';
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
       throw Exception('error api');
@@ -105,7 +105,7 @@ class APIClientManager {
   }
 
   Future<DustModel> fetchDust(String legalcode) async {
-    var url = 'http://${Config.domain}:8080/api/dust/$legalcode';
+    var url = 'http://$domain:8080/api/dust/$legalcode';
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
       throw Exception('error api');
@@ -117,7 +117,7 @@ class APIClientManager {
   }
 
   Future<GeoModel> fetchGeocoding(double lat, double long) async {
-    var url = 'http://${Config.domain}:8080/api/geo/$lat/$long';
+    var url = 'http://$domain:8080/api/geo/$lat/$long';
 
     final response = await client.get(Uri.parse(url), headers: headers);
     if (response.statusCode != 200) {
