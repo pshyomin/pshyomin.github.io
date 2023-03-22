@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_weather_bg_null_safety/flutter_weather_bg.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:flutter_weather_bg_null_safety/flutter_weather_bg.dart';
 //import 'package:flutter_weather_bg_null_safety/bg/weather_bg.dart';
 //import 'package:flutter_weather_bg_null_safety/utils/weather_type.dart';
 import 'package:geolocator/geolocator.dart';
@@ -31,7 +31,7 @@ class HomeState extends State<HomePage> {
   int ptyNumber = 0;
   String sky = '상태';
   String pty = '';
-  WeatherType weatherType = WeatherType.sunny;
+  //WeatherType weatherType = WeatherType.sunny;
 
   @override
   void initState() {
@@ -57,15 +57,15 @@ class HomeState extends State<HomePage> {
     switch (skyNumber) {
       case 1:
         sky = '맑음';
-        weatherType = WeatherType.sunny;
+        //weatherType = WeatherType.sunny;
         break;
       case 3:
         sky = '구름많음';
-        weatherType = WeatherType.cloudy;
+        //weatherType = WeatherType.cloudy;
         break;
       case 4:
         sky = '흐림';
-        weatherType = WeatherType.foggy;
+        //weatherType = WeatherType.foggy;
         break;
     }
 
@@ -75,27 +75,27 @@ class HomeState extends State<HomePage> {
         break;
       case 1:
         pty = '비';
-        weatherType = WeatherType.middleRainy;
+        //weatherType = WeatherType.middleRainy;
         break;
       case 2:
         pty = '비/눈';
-        weatherType = WeatherType.cloudy;
+        //weatherType = WeatherType.cloudy;
         break;
       case 3:
         pty = '눈';
-        weatherType = WeatherType.middleSnow;
+        //weatherType = WeatherType.middleSnow;
         break;
       case 5:
         pty = '빗방울';
-        weatherType = WeatherType.lightRainy;
+        //weatherType = WeatherType.lightRainy;
         break;
       case 6:
         pty = '빗방울눈날림';
-        weatherType = WeatherType.lightSnow;
+        //weatherType = WeatherType.lightSnow;
         break;
       case 7:
         pty = '눈날림';
-        weatherType = WeatherType.middleSnow;
+        //weatherType = WeatherType.middleSnow;
         break;
     }
   }
@@ -107,6 +107,7 @@ class HomeState extends State<HomePage> {
     );
     return Scaffold(
       extendBodyBehindAppBar: true,
+      backgroundColor: Colors.blueAccent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -132,11 +133,11 @@ class HomeState extends State<HomePage> {
             final dailyData = state.weather.daily!;
             return Stack(
               children: [
-                WeatherBg(
+                /*WeatherBg(
                   weatherType: weatherType,
                   width: layoutManager.getWidth(1),
                   height: layoutManager.getHeight(1),
-                ),
+                ),*/
                 SingleChildScrollView(
                   controller: scrollController,
                   padding: const EdgeInsets.only(bottom: 20),
@@ -200,13 +201,13 @@ class HomeState extends State<HomePage> {
             );
           } else {
             return Stack(
-              children: [
-                WeatherBg(
+              children: const [
+                /*WeatherBg(
                   weatherType: weatherType,
                   width: layoutManager.getWidth(1),
                   height: layoutManager.getHeight(1),
-                ),
-                const SafeArea(
+                ),*/
+                SafeArea(
                   child: Center(
                     child: CircularProgressIndicator(
                       color: Colors.white,
