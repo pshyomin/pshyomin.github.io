@@ -73165,7 +73165,7 @@ var $async$jH=A.Y(function(e,f){if(e===1)return A.U(f,r)
 while(true)switch(s){case 0:h=A.cm(c,null)
 if(h!==0){--h
 if(h<0)h=23}s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/live/"+b+"/"+h+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jH)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/live/"+b+"/"+h+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jH)
 case 3:o=f
 if(o.b!==200)throw A.b(A.bx("error api"))
 n=B.ap.mb(0,A.Fd(A.F5(o.e).c.a.i(0,"charset")).ca(0,o.w),null)
@@ -73194,7 +73194,7 @@ while(true)switch(s){case 0:h=A.cm(c,null)
 g=A.cm(d,null)
 if(g>45){if(h!==0){--h
 if(h<0)h=23}g=45}s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/liveday/"+b+"/"+h+"/"+g+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jI)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/liveday/"+b+"/"+h+"/"+g+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jI)
 case 3:o=f
 if(o.b!==200)throw A.b(A.bx("error api"))
 n=B.ap.mb(0,A.Fd(A.F5(o.e).c.a.i(0,"charset")).ca(0,o.w),null)
@@ -73221,7 +73221,7 @@ a9l(a,b,c){var s=0,r=A.X(t.Xd),q,p=this,o,n,m,l,k,j,i,h
 var $async$jE=A.Y(function(d,e){if(d===1)return A.U(e,r)
 while(true)switch(s){case 0:i=A.cm(b,null)
 s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/daily/"+(A.cm(c,null)<5?i-1:i)+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jE)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/daily/"+(A.cm(c,null)<5?i-1:i)+"/"+A.f(a.a)+"/"+A.f(a.b),0,null),p.b),$async$jE)
 case 3:h=e
 if(h.b!==200)throw A.b(A.bx("error api"))
 o=B.ap.mb(0,A.Fd(A.F5(h.e).c.a.i(0,"charset")).ca(0,h.w),null)
@@ -73247,7 +73247,7 @@ jJ(a,b){return this.a9v(a,b)},
 a9v(a,b){var s=0,r=A.X(t.F0),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$jJ=A.Y(function(c,d){if(c===1)return A.U(d,r)
 while(true)switch(s){case 0:s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/sun/"+b+"/"+a,0,null),p.b),$async$jJ)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/sun/"+b+"/"+a,0,null),p.b),$async$jJ)
 case 3:f=d
 if(f.b!==200)throw A.b(A.bx("error api"))
 o=new A.ahv()
@@ -73280,7 +73280,7 @@ jF(a){return this.a9n(a)},
 a9n(a){var s=0,r=A.X(t.FH),q,p=this,o,n,m,l,k,j
 var $async$jF=A.Y(function(b,c){if(b===1)return A.U(c,r)
 while(true)switch(s){case 0:s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/dust/"+a,0,null),p.b),$async$jF)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/dust/"+a,0,null),p.b),$async$jF)
 case 3:j=c
 if(j.b!==200)throw A.b(A.bx("error api"))
 o=B.ap.mb(0,A.Fd(A.F5(j.e).c.a.i(0,"charset")).ca(0,j.w),null)
@@ -73302,7 +73302,7 @@ jG(a,b){return this.a9p(a,b)},
 a9p(a,b){var s=0,r=A.X(t.RF),q,p=this,o
 var $async$jG=A.Y(function(c,d){if(c===1)return A.U(d,r)
 while(true)switch(s){case 0:s=3
-return A.a1(p.a.js("GET",A.ec("http://www.uridongnae.com:8080/api/geo/"+A.f(a)+"/"+A.f(b),0,null),p.b),$async$jG)
+return A.a1(p.a.js("GET",A.ec("https://www.uridongnae.com:80/api/geo/"+A.f(a)+"/"+A.f(b),0,null),p.b),$async$jG)
 case 3:o=d
 if(o.b!==200)throw A.b(A.bx("error api"))
 q=A.aKo(B.ap.mb(0,A.Fd(A.F5(o.e).c.a.i(0,"charset")).ca(0,o.w),null))
