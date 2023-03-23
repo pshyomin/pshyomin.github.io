@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:portfolio/utils/config.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../blocs/calculator/calculator_cubit.dart';
 import '../../../../utils/calculator/layout_manager.dart';
@@ -338,27 +337,5 @@ class CalculatorState extends State<Calculator> {
         ),
       ),
     );
-  }
-
-  Widget _linkButton(String asset, String url) {
-    return FittedBox(
-      child: IconButton(
-        onPressed: () => _openUrl(url),
-        iconSize: 64,
-        splashRadius: 32,
-        icon: Image.asset(
-          asset,
-          color: Colors.white,
-          colorBlendMode: BlendMode.color,
-        ),
-      ),
-    );
-  }
-
-  Future _openUrl(String strUrl) async {
-    final url = Uri.parse(strUrl);
-    if (!await launchUrl(url)) {
-      throw Exception('$url');
-    }
   }
 }

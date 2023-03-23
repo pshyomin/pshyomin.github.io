@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 //import 'package:flutter_weather_bg_null_safety/utils/weather_type.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../../../../utils/config.dart';
 import '/blocs/weather/weather_bloc.dart';
 import '/models/weather/live_day_model.dart';
@@ -247,27 +246,5 @@ class HomeState extends State<HomePage> {
     }
 
     return await Geolocator.getCurrentPosition();
-  }
-
-  Widget _linkButton(String asset, String url) {
-    return FittedBox(
-      child: IconButton(
-        onPressed: () => _openUrl(url),
-        iconSize: 64,
-        splashRadius: 32,
-        icon: Image.asset(
-          asset,
-          color: Colors.transparent,
-          colorBlendMode: BlendMode.darken,
-        ),
-      ),
-    );
-  }
-
-  Future _openUrl(String strUrl) async {
-    final url = Uri.parse(strUrl);
-    if (!await launchUrl(url)) {
-      throw Exception('$url');
-    }
   }
 }

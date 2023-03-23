@@ -4,7 +4,6 @@ import 'dart:math';
 import 'package:http/http.dart' as http;
 import 'package:xml2json/xml2json.dart';
 
-import '../config.dart';
 import '/models/weather/daily_model.dart';
 import '/models/weather/dust_model.dart';
 import '/models/weather/geo_model.dart';
