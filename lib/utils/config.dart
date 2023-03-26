@@ -3,7 +3,8 @@ import 'package:portfolio/pages/portfolio/project/calculator/calculator_main.dar
 
 import '../models/portfolio/experience_model.dart';
 import '../models/portfolio/portfolio_model.dart';
-import '../pages/portfolio/project/weather/main.dart';
+import '../pages/portfolio/project/weather/main.dart' as weather;
+import '../pages/portfolio/project/ask/main.dart' as ask;
 
 class Config {
   static String domain = 'www.uridongnae.com';
@@ -64,12 +65,55 @@ class Config {
 
   static List<Portfolio> portfolios = [
     Portfolio(
-      icon: Container(),
+      icon: Image.asset('assets/icon/backend.png'),
+      title: '포트폴리오 백엔드',
+      contents: '',
+      project: Scaffold(
+        backgroundColor: const Color.fromRGBO(30, 30, 37, 1.0),
+        appBar: AppBar(
+          title: const Text(
+            'Portfolio Backend',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+        ),
+        body: Center(
+          child: FittedBox(
+            child: Container(
+              width: 360,
+              height: 640,
+              padding: const EdgeInsets.all(18),
+              child: const Text(
+                '저는 백엔드에 대해서는 아는 부분이 없어 고민하던 중 Dart 이용한 백엔드를 만들 수 있다는 걸 알게되었고 수없이 검색하며 "${'백엔드는 어떤식으로 돌아가는지'}" 를 알게되었고 아직 미흡하나 재미를 느껴 Dart 를 이용한 백엔드도 공부가 필요하다고 느꼈습니다. 잘 안되는 부분들도 있었지만 하나씩 하나씩 해나가니 포트폴리오에 사용할 백엔드 서버를 완성할 수 있었습니다.',
+                maxLines: 12,
+                style: TextStyle(
+                  fontSize: 21,
+                  letterSpacing: 1,
+                  wordSpacing: 1,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w300,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+      stack: const [
+        'shelf',
+        'http',
+      ],
+      github: 'https://github.com/pshyomin/ask',
+    ),
+    Portfolio(
+      icon: Image.asset('assets/icon/ask.png'),
       title: '무엇이든 물어보세요',
       contents: '',
-      project: Container(),
+      project: const ask.MyApp(),
       stack: const [
         'Bloc',
+        'http (web)',
+        'dio (mobile)',
         'Rest API',
         'JsonSerializable',
       ],
@@ -79,9 +123,10 @@ class Config {
       icon: Image.asset('assets/icon/weather.png'),
       title: '오늘의날씨',
       contents: '',
-      project: MyApp(),
+      project: weather.MyApp(),
       stack: const [
         'Bloc',
+        'http',
         'Rest API',
         'JsonSerializable',
       ],
@@ -108,7 +153,7 @@ class Config {
       title: '와풀',
       contents: '외주',
       dateTime: '22.11 ~ 22.12',
-      stacks: ['Bloc', 'Rest API', 'Firebase', 'Sqlite'],
+      stacks: ['Bloc', 'http', 'Rest API', 'Firebase', 'Sqlite'],
       google: 'https://play.google.com/store/apps/details?id=net.wafull',
     ),
   ];
