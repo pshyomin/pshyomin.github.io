@@ -103,7 +103,7 @@ class Config {
         'shelf',
         'http',
       ],
-      github: 'https://github.com/pshyomin/ask',
+      github: 'https://github.com/pshyomin/backend',
     ),
     Portfolio(
       icon: Image.asset('assets/icon/ask.png'),
