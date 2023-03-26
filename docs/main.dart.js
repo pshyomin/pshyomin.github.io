@@ -99928,8 +99928,8 @@ return A.azL(A.axA(A.aQZ(A.aBe("^",null),t.N),$.aLW(),q,p),new A.awd(),q,p,p)})
 s($,"b0y","a3k",()=>A.aDM(t.K))
 r($,"b_s","axN",()=>new A.a9Q())
 s($,"b_g","aJV",()=>A.aD3())
-r($,"b_B","aBL",()=>{var q=null,p="https://github.com/pshyomin/ask",o=t.N
-return A.a([A.afI("",p,A.qr("assets/icon/backend.png",q),A.Di(A.JT(q,B.W,!0,q,B.ad8),B.oz,A.kl(A.eU(B.w,A.aP(q,B.adc,B.i,q,q,q,q,640,q,B.PD,q,q,360),B.i,B.aE),q,q),!1),B.a_y,"\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \ubc31\uc5d4\ub4dc"),A.afI("",p,A.qr("assets/icon/ask.png",q),B.a4D,B.a0k,"\ubb34\uc5c7\uc774\ub4e0 \ubb3c\uc5b4\ubcf4\uc138\uc694"),A.afI("","https://github.com/pshyomin/weather",A.qr("assets/icon/weather.png",q),new A.BJ(new A.amk(new A.a3z(A.aD3(),A.a9(["Accept-Charset","charset=utf-8","Origin",""],o,o))),q),B.X5,"\uc624\ub298\uc758\ub0a0\uc528"),A.afI("","https://github.com/pshyomin/calculator",A.qr("assets/icon/calculator.png",q),B.KY,B.TT,"\uacc4\uc0b0\uae30")],A.a0("q<Qg>"))})
+r($,"b_B","aBL",()=>{var q=null,p=t.N
+return A.a([A.afI("","https://github.com/pshyomin/backend",A.qr("assets/icon/backend.png",q),A.Di(A.JT(q,B.W,!0,q,B.ad8),B.oz,A.kl(A.eU(B.w,A.aP(q,B.adc,B.i,q,q,q,q,640,q,B.PD,q,q,360),B.i,B.aE),q,q),!1),B.a_y,"\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \ubc31\uc5d4\ub4dc"),A.afI("","https://github.com/pshyomin/ask",A.qr("assets/icon/ask.png",q),B.a4D,B.a0k,"\ubb34\uc5c7\uc774\ub4e0 \ubb3c\uc5b4\ubcf4\uc138\uc694"),A.afI("","https://github.com/pshyomin/weather",A.qr("assets/icon/weather.png",q),new A.BJ(new A.amk(new A.a3z(A.aD3(),A.a9(["Accept-Charset","charset=utf-8","Origin",""],p,p))),q),B.X5,"\uc624\ub298\uc758\ub0a0\uc528"),A.afI("","https://github.com/pshyomin/calculator",A.qr("assets/icon/calculator.png",q),B.KY,B.TT,"\uacc4\uc0b0\uae30")],A.a0("q<Qg>"))})
 r($,"b_A","aBK",()=>A.a([new A.N3(A.qr("assets/icon/wafull.jpg",B.JH),"\uc640\ud480","\uc678\uc8fc","22.11 ~ 22.12",A.a(["Bloc","http","Rest API","Firebase","Sqlite"],t.s),"https://play.google.com/store/apps/details?id=net.wafull")],A.a0("q<N3>")))
 s($,"b2y","aLr",()=>!t.Cm.b(A.a([],t.Z)))
 s($,"b1m","aBU",()=>new A.M())
