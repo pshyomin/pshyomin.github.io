@@ -63,7 +63,87 @@ class Config {
     'Unity',
   ];
 
+  static final PageController _pageController = PageController();
+
   static List<Portfolio> portfolios = [
+    Portfolio(
+      icon: Image.asset('assets/uridongnae_icon.png'),
+      title: '우리동네',
+      contents: '토이프로젝트',
+      project: Scaffold(
+        backgroundColor: const Color.fromRGBO(30, 30, 37, 1.0),
+        appBar: AppBar(
+          title: const Text(
+            '우리동네',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+        ),
+        body: Center(
+          child: FittedBox(
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Container(
+                  width: 360,
+                  height: 640,
+                  padding: const EdgeInsets.all(18),
+                  child: PageView(
+                    controller: _pageController,
+                    physics: const ClampingScrollPhysics(),
+                    onPageChanged: (value) {
+                      //
+                    },
+                    children: [
+                      Image.asset('assets/s1.png'),
+                      Image.asset('assets/s2.png'),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  left: 0,
+                  child: IconButton(
+                    onPressed: () {
+                      _pageController.animateToPage(0,
+                          duration: const Duration(microseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  right: 0,
+                  child: IconButton(
+                    onPressed: () {
+                      _pageController.animateToPage(1,
+                          duration: const Duration(microseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
+                    icon: const Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      stack: const [
+        'Bloc',
+        'dio',
+        'go_router',
+        'JsonSerializable',
+        'Rest API',
+      ],
+      google:
+          'https://play.google.com/store/apps/details?id=com.uridongnae.travel',
+    ),
     Portfolio(
       icon: Image.asset('assets/icon/backend.png'),
       title: '포트폴리오 백엔드',
