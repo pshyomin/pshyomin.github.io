@@ -186,19 +186,20 @@ class Config {
       github: 'https://github.com/pshyomin/backend',
     ),
     Portfolio(
-      icon: Image.asset('assets/icon/ask.png'),
-      title: '무엇이든 물어보세요',
-      contents: '',
-      project: const ask.MyApp(),
-      stack: const [
-        'Bloc',
-        'http (web)',
-        'dio (mobile)',
-        'Rest API',
-        'JsonSerializable',
-      ],
-      github: 'https://github.com/pshyomin/ask',
-    ),
+        icon: Image.asset('assets/icon/ask.png'),
+        title: 'Ask - 무엇이든 물어보세요',
+        contents: '',
+        project: const ask.MyApp(),
+        stack: const [
+          'Bloc',
+          'http (web)',
+          'dio (mobile)',
+          'Rest API',
+          'JsonSerializable',
+        ],
+        github: 'https://github.com/pshyomin/ask',
+        google:
+            'https://play.google.com/store/apps/details?id=com.hyominchoi.ask'),
     Portfolio(
       icon: Image.asset('assets/icon/weather.png'),
       title: '오늘의날씨',

@@ -14,7 +14,7 @@ class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
@@ -52,8 +52,8 @@ class _HomeState extends State<Home> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 25, sigmaY: 25),
               child: AppBar(
-                title: const Column(
-                  children: [
+                title: Column(
+                  children: const [
                     Text(
                       '무엇이든 물어보세요',
                       style: TextStyle(
